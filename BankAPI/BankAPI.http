@@ -1,0 +1,24 @@
+﻿@BankAPI_HostAddress = https://localhost:7287
+
+POST {{BankAPI_HostAddress}}/accountitem
+
+Content-Type: application/json;
+
+{
+    "id": 2,
+    "accountNumber": "1234567890",
+    "accountOwnerId": 1,
+    "openDate": "2021-09-01T00:00:00",
+    "balance": 1000.00M,
+    "accountType": "Savings"
+}
+###
+
+GET {{BankAPI_HostAddress}}/accountitems
+
+
+###
+
+POST {{BankAPI_HostAddress}}/accountitems/default
+
+###
