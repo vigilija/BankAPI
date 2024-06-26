@@ -5,11 +5,12 @@
         public long Id { get; set; }
         public string AccountNumber { get; set; }
         public long AccountOwnerId { get; set; }
-        public DateTime OpenDate { get; set; }
+        public DateTime OpenDate { get; set; } = DateTime.Now;
         public decimal Balance { get; set; }
         public string AccountType { get; set; }
 
         public AccountItemDTO() { }
+
         public AccountItemDTO(Account account) =>
             (
                 Id,
